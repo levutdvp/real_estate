@@ -30,7 +30,7 @@ app.use('/api/listing', listingRouter)
 app.use(express.static(path.join(__dirname, '/realEstate/dist')))
 
 app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname + "realEstate","dist", "index.html"))
+    res.sendFile(path.join(__dirname + "realEstate", "dist", "index.html"))
 })
 
 app.use((err, req, res, next) =>{
